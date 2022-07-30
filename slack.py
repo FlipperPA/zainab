@@ -24,6 +24,8 @@ while not minutes_to_run:
 
 minutes_to_run = int(minutes_to_run)
 
+gui.click(10, 10)
+
 while datetime.datetime.now() < (start + datetime.timedelta(minutes=minutes_to_run)):
     gui.click(POSITION_ONE)
     random_pause()
